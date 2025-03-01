@@ -8,9 +8,9 @@ int k;
 System.out.println("which largest number you want");
 k=obj.nextInt();
 
-        // for (int i=0 ; i<arr.length ; i++){  // it will check whole array
+         for (int i=0 ; i<arr.length ; i++){  // it will check whole array
 
-         for (int i=0 ; i<k ; i++){  // it will check which largest number we want
+        //  for (int i=0 ; i<k ; i++){  // it will check which largest number we want
         
              
              for (int j=i+1 ; j<arr.length ; j++){
