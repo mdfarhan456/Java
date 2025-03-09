@@ -1,7 +1,9 @@
- class First{
+import java.util.Arrays;
 
-    public static void main(String arg[]){
-        String a="salman";
-        System.out.println(a);
+class First {
+    public static void main(String arg[]) {
+        String a = "salman";
+        char c[] = a.toCharArray();
+        System.out.println(Arrays.toString(c));
     }
 }
