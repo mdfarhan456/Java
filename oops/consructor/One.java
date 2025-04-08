@@ -1,87 +1,111 @@
-//Non parameterizez.....
+// //Non parameterizez.....
 
-// class Two
-// {
-//     Two(){
+// // class Two
+// // {
+// //     Two(){
      
-//        System.out.println("consuructoe called");
+// //        System.out.println("consuructoe called");
 
-//     }
-// }
-// public class One
-// {
-//     public static void main(String arg[])
-//     {
+// //     }
+// // }
+// // public class One
+// // {
+// //     public static void main(String arg[])
+// //     {
 
-//         Two obj=new Two();
+// //         Two obj=new Two();
         
 
-//     }
-// }
+// //     }
+// // }
 
 
 
-//Parametrazied................
+// //Parametrazied................
 
-// class Two
-// {
-//     Two(String name , int age){
-//         System.out.println(name);
-//         System.out.println(age);
+// // class Two
+// // {
+// //     Two(String name , int age){
+// //         System.out.println(name);
+// //         System.out.println(age);
      
        
 
+// //     }
+// // }
+// // public class One
+// // {
+// //     public static void main(String arg[])
+// //     {
+
+// //         Two obj=new Two("farhan",21);
+        
+
+// //     }
+// // }
+
+
+// //Copy constructor......................
+
+// class Two
+// {
+//     String name="";
+//     int age;
+
+//     Two(String name , int age)
+//     {
+//         this.name=name;
+//         this.age=age;
+
+//         System.out.println(this.name);
+//         System.out.println(this.age);
+
+//     }
+
+//     Two(Two obj)
+//     {
+//           this.name=obj.name;
+//           this.age=obj.age;
+
+//         System.out.println(this.name);
+//         System.out.println(this.age);
+
 //     }
 // }
+
 // public class One
 // {
 //     public static void main(String arg[])
 //     {
-
-//         Two obj=new Two("farhan",21);
+//         Two obj= new Two("farhan",21);
         
+        
+//         Two obj1=new Two(obj);
 
 //     }
-// }
 
+// 
 
-//Copy constructor......................
-
-class Two
-{
-    String name="";
-    int age;
-
-    Two(String name , int age)
+class Two{
+String name;
+    Two(String name)
     {
         this.name=name;
-        this.age=age;
-
         System.out.println(this.name);
-        System.out.println(this.age);
-
     }
-
     Two(Two obj)
     {
-          this.name=obj.name;
-          this.age=obj.age;
-
+        this.name=obj.name;
         System.out.println(this.name);
-        System.out.println(this.age);
-
     }
 }
 
-public class One
-{
+public class One{
+
     public static void main(String arg[])
     {
-        Two obj= new Two("farhan",21);
-        
-        
+        Two obj=new Two("farhan");
         Two obj1=new Two(obj);
 
     }
-
 }

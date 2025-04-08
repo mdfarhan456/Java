@@ -1,43 +1,37 @@
 class Two{
-    void show()
-    {
-        System.out.println("2 class");
-    }
+   int a;
+   int b;
+   void show(int a)
+   {
+    System.out.println(a);
+    
+
+   }
+   void show(int b, int a)
+   {
+     System.out.println(b);
+     System.out.println(a);
+    
+    
+
+   }
+
+
 }
-class Three extends Two{
-    void show()
-    {
-         System.out.println("3 class");  //it is overding function of Two class
-    }
-}
 
-
-
-public class Overloading extends Three{
-
+public class Overloading
+{
     public static void main(String arg[])
     {
+        Two obj=new Two();
+        obj.a=5;
+        obj.b=6;
 
-        //if we want to access functio of TWO class we have to make object of Two class........
-        Two obj1=new Two();
-        obj1.show();
+        obj.show(obj.a);
+        obj.show(obj.a,obj.b);
+        
+        
 
-
-//overiding......
-        Overloading obj=new Overloading();
-        obj.show();
 
     }
 }
-
-
-// Polymorphism = many forms (object/function)
-// static(compile time)=method overloaing
-// dynamic(run time)=method overiding
-
-
-
-// rule of overloading-->
-// 1. Name of function should be shame
-// 2. Function should be in diffrent class
-// 3. there should be inheritance
