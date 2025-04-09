@@ -154,13 +154,13 @@
 
 class Two
 {
-    int arr[];
+    int a;
 
-    Two(int arr[])
+    Two(int a)
     {
       
         
-            this.arr=arr;
+            this.a=a;
         
 
     }
@@ -168,18 +168,15 @@ class Two
     {
 
        
-            this.arr=obj.arr;
+            this.a=obj.a;
         
        
 
     }
     void display()
     {
-        for(int i:arr)
-        {
-            System.out.print(i);
-        }
-         System.out.println();
+        
+         System.out.println(a);
     }
 
    
@@ -189,18 +186,19 @@ public class Deepcopy
 {
     public static void main(String arg[])
     {
-        int arr[]=new int[]{5,3,6,4,5};
+        int a=6;
 
-        Two obj=new Two(arr);
+        Two obj=new Two(a);
         Two obj1=new Two(obj);
 
         obj.display();
         obj1.display();
 
-        obj.arr[0]=2;
+        obj.a=2;
 
           obj.display();
           obj1.display();
+
 
     }
 }
